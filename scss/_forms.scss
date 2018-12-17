@@ -1,0 +1,114 @@
+/*===================================
+=            formulários            =
+===================================*/
+form,
+.form {
+    .row {
+        margin-bottom: 10px;
+        @include clearfix;
+    }
+    .input_style {
+        width: 100%;
+        outline: none;
+        height: 45px;
+        border: 0;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        background: none;
+        padding-left: 10px;
+        @include placeholder {
+            opacity: .5 !important;
+        }
+    }
+
+    .half,
+    .metade {
+        @include col2;
+    }
+
+    .third,
+    .terco {
+        @include col3;
+    }
+
+    .forth,
+    .quarto {
+        @include col4;
+    }
+
+    .full,
+    .completo {
+        width: 100%;
+    }
+
+    .full,
+    .completo,
+    .half,
+    .metade,
+    .third,
+    .terco,
+    .forth,
+    .quarto {
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="file"],
+    input[type="password"],
+    input[type="search"],
+    input[type="checkbox"],
+    input[type="radio"] {
+        @extend .input_style;
+
+        &:hover,
+        &:focus {}
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    select {
+        @extend .input_style;
+        option {}
+    }
+
+    textarea {
+        @extend .input_style;
+        height: 130px;
+        padding-top: 8px;
+        &:hover,
+        &:focus {}
+    }
+
+    input[type="submit"],
+    button[type="button"],
+    button[type="submit"] {
+        height: auto;
+        cursor: pointer;
+        height: 45px;
+        background: $azul;
+        border: 0;
+        color: #fff;
+        padding: 0 30px;
+        border-radius: 5px;
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+    // form
+}
+
+// form

@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import "fontawesome/fontawesome.scss";
+@import "normalize";
+@import "../node_modules/susy/sass/susy";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "grid";
+@import "mixins_fixes";
+@import "gerais";
+@import "dropdown";
+@import "forms";
+@import "modals";
+@import "dropdown";
+@import "plugins";
+
+body.blog {
+    background: #f1f5f9;
+
+    header {
+        height: 99px;
+        box-shadow: 0 0 27px rgba(90, 131, 233, 0.07);
+        background-color: #ffffff;
+        position: relative;
+
+        .layout {
+            max-width: 1400px;
+
+            a.logo {
+                float: left;
+                transform: initial;
+                left: 0;
+                top: 25px;
+                position: relative;
+                display: none;
+
+                &.hidden {
+                    display: block !important;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .left,
+            .right {
+                display: none;
+            }
+            .modal-trigger {
+
+            }
+            nav.menu_blog {
+                display: block;
+                float: right;
+                position: relative;
+                top: 30px;
+
+                @include breakpoint($wide) {
+                    display: none;
+                }
+                ul {
+                    li {
+                        a {
+                            color: #687098;
+                            font-family: "Open Sans";
+                            font-size: 15px;
+                            font-weight: 300;
+                            line-height: 24px;
+                            display: inline-block;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            &.btn {
+                                color: #fff;
+                                padding: 6px 20px;
+                                border-radius: 30px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .conteudo {
+        padding: 70px 0;
+        @include breakpoint($tablet) {
+            padding: 35px 0;
+
+        }
+        .layout {
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+
+            h2 {
+                color: #485460;
+                font-family: Dosis;
+                font-size: 28px;
+                font-weight: 500;
+                margin-bottom: 30px;
+                padding-left: 15px;
+                @include breakpoint($tablet) {
+                    margin-bottom: 20px;
+                    padding-left: 5px;
+                    font-size: 25px;
+                }
+            }
+
+            h3 {
+                color: #485460;
+                font-family: Dosis;
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 30px;
+                @include breakpoint($tablet) {
+                    margin-bottom: 20px;
+                    padding-left: 5px;
+                    font-size: 25px;
+                }
+            }
+
+            .tag {
+                border-radius: 14px;
+                color: #ffffff;
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 24px;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 2px 20px;
+                background: #43afd7;
+            }
+
+            .wrap {
+                @include gal4;
+            }
+
+            .botoes {
+                text-align: center;
+                margin-bottom: 60px;
+                padding-top: 30px;
+                @include breakpoint($tablet) {
+                    margin-bottom: 30px;
+                    padding-top: 0;
+                }
+                a {
+                    display: inline-block;
+                    border-radius: 30px;
+                    padding: 11px 38px;
+                }
+            }
+
+            a.noticia {
+                display: block;
+                overflow: hidden;
+
+                span {
+                    display: block;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                &:hover {
+                    img {
+                        opacity: .5;
+                        transform: scale(1.2) rotate(5deg);
+                    }
+
+                    span.texto {
+                        .titulo {
+                            color: $azul;
+                        }
+                    }
+                }
+
+                span.foto {
+                    position: relative;
+                    overflow: hidden;
+                    background: $azul;
+                    border-radius: 10px 10px 0px 0px;
+
+                    img {
+                        display: block;
+                        transition: all .35s ease-in-out;
+                    }
+
+                    p.tag {
+                        position: absolute;
+                        bottom: 10px;
+                        left: 10px;
+                    }
+                }
+
+                span.texto {
+                    background: #fff;
+                    padding: 15px;
+                    border-radius: 0 0 10px 10px;
+
+                    .titulo {
+                        color: #4f505c;
+                        font-family: Dosis;
+                        font-size: 21px;
+                        font-weight: 500;
+                        transition: color .35s ease-in-out;
+
+                        @include breakpoint($tablet) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    .descricao {
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                        color: #4f505c;
+                        font-family: "Open Sans";
+                        font-size: 15px;
+                        font-weight: 400;
+                        opacity: 0.5;
+                    }
+
+                    .data {
+                        color: #9ca4ce;
+                        font-family: "Open Sans";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+
+                        @include breakpoint($tablet) {
+                            font-size: 13px;
+                        }
+
+                        &:before {
+                            content: url(../img/data_calendario.png);
+                            position: relative;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            .paginacao {
+                li {
+                    a {}
+                }
+            }
+        }
+    }
+
+    &.interno {
+        background: #f9faff;
+
+        .conteudo {
+            padding-top: 40px;
+
+            .titulo_wrap {
+                h1 {
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                    color: #505a88;
+                    font-size: 30px;
+                    font-weight: 400;
+                    max-width: 900px;
+
+                    @include breakpoint($tablet) {
+                        font-size: 20px;
+                    }
+                }
+
+                img.foto {
+                    border-radius: 10px;
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                    @include breakpoint($tablet) {}
+                }
+
+                .data {
+                    color: #9ca4ce;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                    @include breakpoint($tablet) {
+                        font-size: 13px;
+                    }
+
+                    &:before {
+                        content: url(../img/data_calendario.png);
+                        position: relative;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            // titulo_wrap
+            .ckeditor {
+                margin-bottom: 70px;
+
+                p,
+                li {
+                    color: #656775;
+                }
+            }
+        }
+    }
+}
+
+.nao_encontrada {
+    max-width: 660px;
+    padding-left: 20px;
+    @include breakpoint($tablet) {
+        padding-left: 0;
+    }
+    h1 {
+        font-family: Dosis;
+        color: #505a88;
+        font-size: 40px;
+        font-weight: 400;
+        max-width: 900px;
+        margin-bottom: 20px;
+        @include breakpoint($tablet) {
+            font-size: 30px;
+        }
+    }
+    p {
+        color: #626a71;
+        font-size: 18px;
+        margin-bottom: 60px;
+        @include breakpoint($tablet) {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+---
+layout: default
+comments: true
+---
+
+<div class="titulo_wrap">
+    <p class="tag empresarial">
+        {% for post_category in page.categories %}
+        {% for category in site.data.categories %}
+        {% if post_category == category.slug %}{{ category.name }}{% endif %}
+        {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+        {% endfor %}
+
+    </p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="data">{{ page.date | date: "%d/%m/%Y" }}</p>
+    <img class="foto" src="/assets/img/posts/{{ page.image | default: "default.jpg" }}" alt="">
+</div>
+<div class="conteudo_wrap ckeditor">
+    {{ content }}
+</div>
+<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+{%- include related_posts.html -%}
+{%- include disqus_comments.html -%}

@@ -1,0 +1,100 @@
+/*=======================================
+=            modal-box            =
+=======================================*/
+
+.overlay {
+    background: rgba(0, 0, 0, 0.80);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    transition: background .35s ease-in-out, color .35s ease-in-out, opacity .35s ease-in-out, visibility .35s ease-in-out;
+    z-index: 25;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+} // overlay
+
+.modal-box {
+    transition: opacity .35s ease-in-out;
+    max-width: 650px;
+    background: #fff;
+    visibility: hidden;
+    max-height: 90%;
+    z-index: 26;
+    width: 90%;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 10px 10px 10px 10px;
+    padding: 30px;
+    @include breakpoint($tablet) {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    &#menu {
+       top: 0;
+       right: -100%;
+       transform: initial;
+       height: 100%;
+       left: initial;
+       background: #0d6fd2;
+       max-height: initial;
+       border-radius: 0;
+       opacity: 0;
+       transition: opacity .35s ease-in-out, right .35s ease-in-out;
+       width: 100%;
+       text-align: center;
+       &.active {
+        opacity: 1;
+        right: 0;
+    }
+    img {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    ul {
+        li {
+            a {
+             color: #fff;
+             padding: 10px 0;
+             display: block;
+             font-size: 20px;
+             font-weight: 300;
+         }
+     }
+ }
+}
+h2 {}
+.close {
+    display: block;
+    clear: both;
+    z-index: 3;
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    font-size: 26px;
+    color: #fff;
+    @include breakpoint($tablet) {
+        font-size: 18px;
+        top: 20px;
+    }
+    img {
+        width: auto;
+    }
+    } //fechar
+    .ckeditor {
+        margin-bottom: 20px;
+    }
+} //modal-box

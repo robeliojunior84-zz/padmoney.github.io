@@ -1,0 +1,50 @@
+<h2>Posts Relacionados</h2>
+<div class="wrap">
+    {% assign maxRelated = 8 %}
+    {% assign maxRelatedCounter = 0 %}
+
+    {% for post in site.posts %}
+    {% if maxRelatedCounter >= maxRelated %}
+    {% break %}
+    {% endif %}
+    {% for category in post.categories %}
+
+
+    {% if post.url != page.url %}
+    {% if page.categories contains category %}
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    <a href="{{ post.url }}" class="noticia">
+        <span class="foto">
+            <img src="/assets/img/posts/{{ post.image | default: "default.jpg" }}" alt="">
+            <p class="tag empresarial">
+                {% for post_category in post.categories %}
+                {% for category in site.data.categories %}
+                {% if post_category == category.slug %}{{ category.name }}{% endif %}
+                {% unless forloop.last %}&nbsp;{% endunless %}
+                {% endfor %}
+                {% endfor %}
+            </p>
+        </span>
+        <span class="texto">
+            <p class="titulo">{{ post.title }}</p>
+            <p class="descricao">{{ post.subtitle }}</p>
+            <p class="data">{{ post.date | date: "%d/%m/%Y" }}</p>
+        </span>
+    </a>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    {% if sameTagCount >= minCommonTags %}
+    <div>
+        <h5><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a></h5>
+    </div>
+    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+    {% if maxRelatedCounter >= maxRelated %}
+    {% break %}
+    {% endif %}
+    {% endif %}
+
+    {% endfor %}
+
+</div>

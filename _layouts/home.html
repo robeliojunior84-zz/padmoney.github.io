@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<!-- <h2>Empresarial</h2>
+<div class="wrap">
+  <a href="blog-interno.php" class="noticia">
+    <span class="foto">
+      <img src="https://picsum.photos/320/200" alt="">
+      <p class="tag empresarial">Empresarial</p>
+    </span>
+    <span class="texto">
+      <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+      <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nihil fuga voluptatibus
+        culpa. Dolorum repellendus at maxime architecto sint, reiciendis accusamus ab, voluptate perferendis quia nemo,
+        quisquam, natus. Repellendus, id.</p>
+      <p class="data">13/08/2018</p>
+    </span>
+  </a>
+</div>
+<div class="botoes">
+  <a href="#" class="btn blue">Ver todos os posts</a>
+</div> -->
+
+
+<div class="wrap">
+  {% for post in paginator.posts %}
+  <a href="{{ post.url }}" class="noticia">
+    <span class="foto">
+      <img src="/assets/img/posts/{{ post.image | default: "default.jpg" }}" alt="">
+      <p class="tag artigos">
+        {% for post_category in post.categories %}
+        {% for category in site.data.categories %}
+        {% if post_category == category.slug %}{{ category.name }}{% endif %}
+        {% unless forloop.last %}&nbsp;{% endunless %}
+        {% endfor %}
+        {% endfor %}
+      </p>
+    </span>
+    <span class="texto">
+      <p class="titulo">{{ post.title }}</p>
+      <p class="descricao">{{ post.subtitle }}</p>
+      <p class="data">{{ post.date | date: "%d/%m/%Y" }}</p>
+    </span>
+  </a>
+  {% endfor %}
+</div>
+{%- include pagination.html -%}
