@@ -4182,6 +4182,17 @@ footer .base {
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400; }
+  footer .base a {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 24px;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #282d32; }
+    footer .base a:hover {
+      text-decoration: underline; }
 
 .title {
   background: url(../img/bg_titulo.png) center center;
