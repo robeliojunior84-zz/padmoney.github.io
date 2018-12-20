@@ -265,7 +265,6 @@ body.blog {
                     color: #505a88;
                     font-size: 30px;
                     font-weight: 400;
-                    max-width: 900px;
 
                     @include breakpoint($tablet) {
                         font-size: 20px;

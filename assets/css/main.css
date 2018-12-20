@@ -5070,8 +5070,7 @@ body.blog {
         margin-top: 15px;
         color: #505a88;
         font-size: 30px;
-        font-weight: 400;
-        max-width: 900px; }
+        font-weight: 400; }
         @media (max-width: 960px) {
           body.blog.interno .conteudo .titulo_wrap h1 {
             font-size: 20px; } }
