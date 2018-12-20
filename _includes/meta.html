@@ -11,6 +11,11 @@
 <meta property="og:site_name" content="{% if page.title %}{{ page.title | append: " - Padmoney" }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
 <meta property="og:type" content="blog" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="/assets/img/img-facebook.jpg" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title | append: " - Padmoney" }}{% else %}{{ site.title }}{% endif %}" />
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:site" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 <link rel="icon" href="/assets/img/favicon.png" type="image/x-icon" />
 <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,700|Open+Sans:300,400" rel="stylesheet">
