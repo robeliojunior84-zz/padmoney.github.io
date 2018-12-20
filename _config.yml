@@ -5,7 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   finanças e gestão para ajudar seu negócio.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.padmoney.com"
-url_signup: "https://www.padmoney.com/signup"
+url_signup: "https://sys.padmoney.com/conta/cadastrar"
 url_site: "https://www.padmoney.com"
 
 # Build settings
