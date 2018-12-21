@@ -1,13 +1,11 @@
 ---
 layout: post
 title: 18 Dicas de segurança para transações bancárias online
-subtitle: Neste fim de ano, as transações realizadas nos dias 24 e 31 de dezembro serão processadas nos dias úteis seguintes, 26/12 e 02/01 respectivamente.
+subtitle: Enumeramos 18 dicas elaboradas pela FEBRABAN para não cair em armadilhas online para transações bancárias
 image: seguranca.jpg
 date: 2018-12-26 08:00:00 -0200
 categories: seguranca
 ---
-
-
 
 Segundo dados da **FEBRABAN (Federação Brasileira de Bancos)**, os bancos brasileiros investem *anualmente* cerca de *R$ 2 bilhões* em sistemas e protocolos de segurança eletrônica para garantir a tranquilidade de seus clientes e colaboradores. Também atuam em parceria com governos, polícias e com o Poder Judiciário, para **combater os crimes e propor novos padrões de segurança**.
 
@@ -18,7 +16,6 @@ São muito comuns roubos de senhas por meio de engenharia social (método usado 
 Uma dica muito importante é que o banco **NUNCA** solicita a senha do cliente por email ou telefone. Assim, somente informe seus dados de acesso, como número de conta e senha, no site seguro do banco. **Não empreste, alugue ou informe seus dados a aoutras pessoas ou sites que não sejam do seu banco**. E lembre-se que sua senha é pessoal e instransferível.
 
 A seguir, enumeramos algumas dicas elaboradas pela FEBRABAN para não cair em armadilhas online:
-
 
 - Mantenha os antivírus **originais** instalados no computador **atualizados** para ter acesso aos serviços bancários.
 - **Troque periodicamente** sua senha de acesso ao banco na internet e *utilize sempre senhas de bloqueio* de uso do seu smartphone.
