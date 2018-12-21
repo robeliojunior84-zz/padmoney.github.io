@@ -14,8 +14,9 @@
         <li class="has-dropdown">
           <a href="">Categorias</a>
           <ul>
-            <li><a href="/administracao-financeira">Administração Financeira</a></li>
-            <li><a href="/gestao-e-negocios">Gestão e Negócios</a></li>
+            {% for category in site.data.categories %}
+            <li><a href="/{{category.slug}}">{{ category.name }}</a></li>
+            {% endfor %}
           </ul>
         </li>
         <li><a href="{{ site.url_signup }}" class="btn blue">Cadastre-se</a></li>

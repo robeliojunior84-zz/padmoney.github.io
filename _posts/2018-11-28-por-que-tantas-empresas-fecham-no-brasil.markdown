@@ -6,7 +6,7 @@ date:   2018-11-18 10:59:58 -0200
 categories: gestao-e-negocios
 ---
 
-Em 2016 o [Sebrae](http://www.Sebrae.com.br) (Serviço Brasileiro de Apoio às Micro e Pequenas Empresas) apresentou dados da pesquisa ["Sobrevivência das Empresas no Brasil"](http://www.Sebrae.com.br/Sebrae/Portal%20Sebrae/Anexos/sobrevivencia-das-empresas-no-brasil-relatorio-2016.pdf), divulgada em outubro do mesmo ano, onde aponta que a falta de planejamento é responsável pelo fechamento de 25% das empresas no Brasil.
+Em 2016 o [Sebrae](http://www.Sebrae.com.br){:target="_blank"} (Serviço Brasileiro de Apoio às Micro e Pequenas Empresas) apresentou dados da pesquisa ["Sobrevivência das Empresas no Brasil"](http://www.Sebrae.com.br/Sebrae/Portal%20Sebrae/Anexos/sobrevivencia-das-empresas-no-brasil-relatorio-2016.pdf){:target="_blank"}, divulgada em outubro do mesmo ano, onde aponta que a falta de planejamento é responsável pelo fechamento de 25% das empresas no Brasil.
 
 Segundo pesquisa do IBGE (Instituto Brasileiro de Geografia e Estatística) divulgada com dados de 2014, das 694,5 mil empresas abertas em 2009, somente 275 mil, ou seja, 39,6%, ainda estavam em pleno funcionamento noano de 2014. Logo após o primeiro ano de funcionamento, 157 mil empresas(22,7%) fecharam as portas.
 
