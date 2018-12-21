@@ -36,8 +36,9 @@
             <div class="coluna">
                 <p class="titulo">Categorias</p>
                 <ul class="menu">
-                    <li><a href="/administracao-financeira">Administração Financeira</a></li>
-                    <li><a href="/gestao-e-negocios">Gestão e Negócios</a></li>
+                    {% for category in site.data.categories %}
+                    <li><a href="/{{category.slug}}">{{ category.name }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
