@@ -11,7 +11,7 @@ Segundo dados da **FEBRABAN (Federação Brasileira de Bancos)**, os bancos bras
 
 Porém, para fazer operações importantes em um ambiente virtual seguro, os usuários também devem ficar atentos e redobrar os cuidados, especialmente nessa época de fim de ano. O [internet banking do sistema financeiro brasileiro](https://www.itforum365.com.br/gestao/ate-2019-metade-das-operacoes-bancarias-sera-feita-on-line){:target="_blank"} é um dos mais avançados em termos de oferta de serviçoes bancários, mas também um dos mais visados para ataques.
 
-São muito comuns roubos de senhas por meio de engenharia social (método usado para forçar a vítima executar uma ação fraudulenta sem o conhecimento dela), pelo qual o fraudador envia emails ou faz chamadas se fazendo passar por um funcionário do banco. Em muitas vezes, o fraudador possui até mesmo alguns dados pessoais do cliente obtidos de forma irregular em outros tipos de golpes.<
+São muito comuns roubos de senhas por meio de engenharia social (método usado para forçar a vítima executar uma ação fraudulenta sem o conhecimento dela), pelo qual o fraudador envia emails ou faz chamadas se fazendo passar por um funcionário do banco. Em muitas vezes, o fraudador possui até mesmo alguns dados pessoais do cliente obtidos de forma irregular em outros tipos de golpes.
 
 Uma dica muito importante é que o banco **NUNCA** solicita a senha do cliente por email ou telefone. Assim, somente informe seus dados de acesso, como número de conta e senha, no site seguro do banco. **Não empreste, alugue ou informe seus dados a aoutras pessoas ou sites que não sejam do seu banco**. E lembre-se que sua senha é pessoal e instransferível.
 

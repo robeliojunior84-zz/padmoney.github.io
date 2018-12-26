@@ -5096,7 +5096,8 @@ body.blog {
         margin-bottom: 70px; }
         body.blog.interno .conteudo .ckeditor p,
         body.blog.interno .conteudo .ckeditor li {
-          color: #656775; }
+          color: #656775;
+          line-height: 1.7em; }
 
 .nao_encontrada {
   max-width: 660px;
