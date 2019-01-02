@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Como economizar com boletos bancários
-subtitle: Você sabe qual a melhor forma de pagamento para o seu negócio e seus clientes?
+subtitle: Muitos empreendedores, devido a facilidade, usam o cartão de crédito ou débito, muitas vezes sem saber o quanto estão deixando de ganhar se estivessem usando o boleto bancário.
 image: boleto-bancario.jpg
 date: 2019-01-02 08:00:00 -0200
 categories: boleto-bancario
