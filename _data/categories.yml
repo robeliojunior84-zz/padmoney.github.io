@@ -1,5 +1,7 @@
 - name: Administração Financeira
   slug: administracao-financeira
+- name: Boleto Bancário
+  slug: boleto-bancario
 - name: Comunicados
   slug: comunicados
 - name: Gestão e Negócios
