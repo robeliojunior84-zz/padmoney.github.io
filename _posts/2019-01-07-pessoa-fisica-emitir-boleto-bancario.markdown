@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pessoa física pode emitir boleto bancário?
-subtitle: Muitos empreendedores, devido a facilidade, usam o cartão de crédito ou débito, muitas vezes sem saber o quanto estão deixando de ganhar se estivessem usando o boleto bancário.
+subtitle: Essa é uma pergunta que sempre tem surgido no meio de muitos empreendedores que não possuem CNPJ e querem utilizar o boleto bancário como forma de recebimento dos seus clientes.
 image: boleto-bancario.jpg
 date: 2019-01-07 08:00:00 -0200
 categories: boleto-bancario
