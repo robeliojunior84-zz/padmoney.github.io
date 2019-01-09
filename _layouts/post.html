@@ -3,6 +3,14 @@ layout: default
 comments: true
 ---
 
+{% capture count_words %} 
+	{{ page.content | number_of_words }} 
+{% endcapture %}
+
+{% capture time_words %} 
+	{{count_words | divided_by: 5}} 
+{% endcapture %} 
+
 <div class="titulo_wrap">
     <p class="tag empresarial">
         {% for post_category in page.categories %}
@@ -14,7 +22,10 @@ comments: true
 
     </p>
     <h1>{{ page.title | escape }}</h1>
-    <p class="data">{{ page.date | date: "%d/%m/%Y" }}</p>
+	<p>
+		<span class="data">{{ page.date | date: "%d/%m/%Y" }}</span>
+		<span class="tempo">Tempo de leitura: {{time_words | divided_by: 60}} min</span>
+	</p>
     <img class="foto" src="/assets/img/posts/{{ page.image | default: "default.jpg" }}" alt="">
 </div>
 <div class="conteudo_wrap ckeditor">

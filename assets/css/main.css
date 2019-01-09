@@ -5092,6 +5092,20 @@ body.blog {
           content: url(../img/data_calendario.png);
           position: relative;
           margin-right: 10px; }
+      body.blog.interno .conteudo .titulo_wrap .tempo {
+        color: #9ca4ce;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; }
+        @media (max-width: 960px) {
+          body.blog.interno .conteudo .titulo_wrap .tempo {
+            font-size: 13px; } }
+        body.blog.interno .conteudo .titulo_wrap .tempo:before {
+          content: url(../img/tempo-leitura.png);
+          position: relative;
+          margin-left: 25px;
+          margin-right: 10px; }
       body.blog.interno .conteudo .ckeditor {
         margin-bottom: 70px; }
         body.blog.interno .conteudo .ckeditor p,
