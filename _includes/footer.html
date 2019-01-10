@@ -56,9 +56,10 @@
     <img src="/assets/img/logo-padmoney-white.png" alt="Logo Padmoney">
     <nav>
         <ul>
-            <li><a href="https://www.padmoney.com">Conheça o Padmoney</a></li>
-            <li><a href="/administracao-financeira">Administração Financeira</a></li>
-            <li><a href="/gestao-e-negocios">Gestão e Negócios</a></li>
+			<li><a href="https://www.padmoney.com">Conheça o Padmoney</a></li>
+			{% for category in site.data.categories %}
+				<li><a href="/{{category.slug}}">{{ category.name }}</a></li>
+			{% endfor %}
         </ul>
     </nav>
 </div>
